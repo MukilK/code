@@ -18,7 +18,12 @@ public class PalindromeConverterTest {
 		Palindrome palindrome=new Palindrome();
 		Assert.assertEquals("a", palindrome.createPalindrome("a"));
 	}
-	
+	@Test
+    public void twoCharStringTest(){
+        Palindrome palindrome=new Palindrome();
+        Assert.assertEquals("aba", palindrome.createPalindrome("ab"));
+    }
+    
 
 	@Test
 	public void palindromeInputTest(){
@@ -43,4 +48,16 @@ public class PalindromeConverterTest {
 		Palindrome palindrome=new Palindrome();
 		Assert.assertEquals("abcdcba", palindrome.createPalindrome("abcd"));
 	}
+	
+	@Test
+    public void string4ToBeConvertedTest(){
+        Palindrome palindrome=new Palindrome();
+        Assert.assertEquals("abccba", palindrome.createPalindrome("abcc"));
+    }
+	
+	@Test
+    public void string5ToBeConvertedTest(){
+        Palindrome palindrome=new Palindrome();
+        Assert.assertEquals("abcba", palindrome.createPalindrome("abcb"));
+    }
 }
