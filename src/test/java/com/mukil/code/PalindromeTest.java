@@ -3,7 +3,7 @@ package com.mukil.code;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PalindromeConverterTest {
+public class PalindromeTest {
 
 	
 	@Test
