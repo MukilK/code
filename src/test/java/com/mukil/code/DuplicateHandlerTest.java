@@ -55,9 +55,8 @@ public class DuplicateHandlerTest {
   }
   @Test
   public void testWithUnsortedArray() throws ArrayNotSortedException{
-    
     thrown.expect(ArrayNotSortedException.class);
-
+    
     DuplicateHandler dhandler=new DuplicateHandler();
     int[] dupes={100,5,4,1,200,300};
     dhandler.setDuplicates(dupes);
