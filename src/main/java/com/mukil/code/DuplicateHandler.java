@@ -37,9 +37,7 @@ public class DuplicateHandler {
         duplicates[++tracker] = duplicates[counter++];
       }
     }
-
     return Arrays.copyOfRange(duplicates, 0, tracker + 1);
-
 
   }
 
