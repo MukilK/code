@@ -1,9 +1,11 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import java.util.ArrayList;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.mukil.strings.StringPermutation;
 
 public class StringPermutationTest {
 
@@ -46,6 +48,16 @@ public class StringPermutationTest {
 	}
 	
 
+	
+	@Test
+    public void permutationsTest(){
+        
+    Assert.assertTrue(StringPermutation.isPermutation("bca", "abc"));
+    
+    }
+	
+	
+    
 	
 	
 	

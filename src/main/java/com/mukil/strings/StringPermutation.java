@@ -1,6 +1,7 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.Test;
@@ -20,7 +21,8 @@ public class StringPermutation {
 		return createPermutations(inputString);
 	}
 
-	public static ArrayList<String> createPermutations(String inputString) {
+	private static ArrayList<String> createPermutations(String inputString) {
+
 		ArrayList<String> subStrings ;
 		ArrayList<String> permutatedStrings = new ArrayList<String>();
 		if (inputString.length() > 2) {
@@ -46,4 +48,23 @@ public class StringPermutation {
 
 	}
 
+	public static boolean isPermutation(String first,String second){
+	  
+	  if (first.length()!=second.length()){
+	    return false;
+	  }
+	  
+	  int[] firstStringTracker=new int[256];
+	  int[] secondStringTracker=new int[256];
+	  
+	  for (int counter=0;counter<first.length();counter++){
+	    firstStringTracker[(int)first.charAt(counter)]=++firstStringTracker[(int)first.charAt(counter)];
+	    secondStringTracker[(int)second.charAt(counter)]=++secondStringTracker[(int)second.charAt(counter)];
+	    
+	  }
+	  
+	  return Arrays.equals(firstStringTracker,secondStringTracker);
+	    
+	  
+	}
 }

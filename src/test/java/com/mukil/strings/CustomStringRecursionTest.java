@@ -1,9 +1,11 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import com.mukil.strings.CustomStringRecursion;
 
 
 public class CustomStringRecursionTest {

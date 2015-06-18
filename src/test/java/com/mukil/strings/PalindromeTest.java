@@ -1,7 +1,9 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.mukil.strings.Palindrome;
 
 public class PalindromeTest {
 

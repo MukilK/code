@@ -1,4 +1,4 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 public class Palindrome {
 

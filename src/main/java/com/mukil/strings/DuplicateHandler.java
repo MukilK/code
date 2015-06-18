@@ -1,4 +1,4 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import java.util.Arrays;
 

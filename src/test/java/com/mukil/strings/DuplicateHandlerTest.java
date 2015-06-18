@@ -1,4 +1,4 @@
-package com.mukil.code;
+package com.mukil.strings;
 
 import org.junit.Assert;
 import org.junit.Rule;
@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import com.mukil.exceptions.ArrayNotSortedException;
+import com.mukil.strings.DuplicateHandler;
 
 public class DuplicateHandlerTest {
 
