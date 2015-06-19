@@ -29,6 +29,7 @@ public class LinkedList {
   public void addNodes(int[] data) {
     for (int i : data) {
       addNode(i);
+      
     }
   }
 
